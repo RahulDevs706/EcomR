@@ -1,0 +1,13 @@
+.MuiStepConnecter-line{
+    display: none !important;
+}
+
+.MuiStepConnecter-root{
+    height:0.5vw;
+    background-color: rgba(0,0,0,0.349);
+}
+
+.MuiStepConnecter-active,
+.MuiStepConnecter-completed{
+    background-color: tomato;
+}

@@ -1,0 +1,168 @@
+.createProductContainer{
+    width:100%;
+    background-color: rgb(221,221,221);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-left:1px solid rgba(0, 0, 0, 0.158);
+    height: 100%;
+}
+
+.createProductForm>h1{
+    color: rgba(0, 0, 0, 0.733);
+    font:400 2vw "Roboto";
+    text-align: center;
+}
+
+
+.createProductForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2vw;
+    justify-content: space-evenly;
+    height: 70%;
+    width:30%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+    border-radius: 10px;
+}
+
+.createProductForm > div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.createProductForm > div > input,
+.createProductForm > div > select,
+.createProductForm > div > textarea{
+    padding:1vw 4vw;
+    padding-right: 1vw;
+    width: 100%;
+    box-sizing: border-box;
+    border:1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 0.9vw "Roboto";
+    outline: none;
+}
+.createProductForm > div > svg{
+    position: absolute;
+    transform: translateX(1vw);
+    font-size: 1.6vw;
+    color: rgba(0, 0, 0, 0.594);
+}
+
+#createProductFormImage{
+    width: 100%;
+    overflow: auto;
+}
+
+#createProductFormImage > img{
+    width: 5vw;
+    height: 5vw;
+    margin: 0 0.5vw;
+}
+
+#createProductFormFile > input{
+    display: flex;
+    padding:0%
+}
+
+#createProductFormFile > input::file-selector-button{
+    cursor:pointer;
+    width:100%;
+    height:5vh;
+    z-index: 2;
+    margin:0%;
+    border:none;
+    font:400 0.8vw "Roboto";
+    transition: all 0.5s;
+    padding:0 1vw;
+    color:rgba(0, 0, 0, 0.659);
+    background-color: #fff;
+}
+
+#createProductFormFile > input::file-selector-button:hover{
+    background-color: rgb(219, 219, 219);
+}
+
+#createProductBtn{
+    border:none;
+    background-color: tomato;
+    color:white;
+    font:300 0.9vw "Roboto";
+    width:100%;
+    padding:0.8vw;
+    cursor:pointer;
+    transition: all 0.5s;
+    border-radius:4px;
+    outline: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.267) ;
+}
+
+
+#createProductBtn:hover{
+    background-color: rgb(167, 53, 33);
+}
+
+
+
+@media screen and (max-width:600px) {
+
+    .createProductContainer{
+        border-left:none;
+        border-top:1px solid rgba(0, 0, 0, 0.158);
+    }
+
+    .createProductForm>h1{
+        font:400 8vw "Roboto";
+        padding:2vw
+    }
+
+    .createProductForm{
+        padding: 8vw;
+        width:100vw;
+        height:100%;
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        border-top:1px solid rgba(0, 0, 0, 0.158)
+    }
+
+    .createProductForm > div{
+        margin: 5vw 0;
+    }
+
+    .createProductForm > div > input,
+    .createProductForm > div > select,
+    .createProductForm > div > textarea{   
+        max-width: 100%;     
+        padding:5vw;
+        padding-left: 12vw;
+        font: 300 4vw "Roboto";
+    }
+    .createProductForm > div > svg{
+        margin:2vw;
+        font-size: 7vw;
+    }
+
+
+    #createProductFormImage > img{
+        width: 20vw;
+        height: 20vw;
+    }
+    #createProductFormFile > input::file-selector-button{
+        font:400 4vw "Roboto";
+        height:15vw
+    }
+
+    #createProductBtn{
+        font:300 5vw "Roboto";
+        padding:4vw;
+    }
+
+
+}
+

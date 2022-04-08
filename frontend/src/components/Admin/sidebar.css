@@ -1,0 +1,77 @@
+.sidebar{
+    padding:4vw 1vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar>a:first-child{
+    padding:0
+}
+
+.sidebar>a>img{
+    width:100%;
+    transition: all 0.5s;
+    transform: none !important;
+}
+
+
+.sidebar a{
+    text-decoration: none;
+    transition: all 0.5s;
+    color:rgba(0, 0, 0, 0.479);
+    font:200 1vw "Roboto";
+    padding:2vw;
+    transition:all 0.5s;
+}
+
+.sidebar a:hover{
+    color:tomato;
+    transform: scale(1.1);
+}
+
+.treeItem>div>div:first-child,
+.treeItemSub>div>div:first-child{
+    margin-right:0.5vw;
+}
+
+
+.treeItem>div>div:last-child,
+.treeItemSub>div>div:last-child{
+    font-size: 1vw !important;
+}
+
+.sidebar a>p{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar a>p>svg{
+    margin-right:0.5vw;
+}
+
+.MuiTypography-root{
+    background-color: white !important;
+}
+
+@media screen and (max-width:600px) {
+    .sidebar{
+        padding:7vw 5vw;
+    }
+
+    .sidebar a{
+        font:200 5vw "Roboto";
+        padding:3vw;
+    }
+
+    .treeItem>div>div:first-child,
+    .treeItemSub>div>div:first-child{
+        margin-right:0.5vw;
+    }
+
+
+    .treeItem>div>div:last-child,
+    .treeItemSub>div>div:last-child{
+        font-size: 5vw !important;
+    }
+}

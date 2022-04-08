@@ -1,0 +1,159 @@
+.orderDetailsPage{
+    background-color: white;
+}
+
+.orderDetailsContainer>h1{
+    font:300 2.5vw "Roboto";
+    margin:4vw 0;
+    color:tomato;
+}
+
+.orderDetailsContainer{
+    padding:5vw;
+    padding-bottom:0;
+}
+
+.orderDetailsContainer>p{
+    font: 400 1.8vw "Roboto";
+}
+
+.orderDetailsContainerBox,
+.orderDetailsCartItemsContainer {
+    margin:2vw;
+}
+
+.orderDetailsContainerBox>p{
+    font:400 2.5vw "Roboto";
+}
+
+.shipping_payment_box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.shipping_payment_box>div:last-child{
+    border-left: 1px solid rgba(0, 0, 0, 0.179);
+    padding-left: 10vw;
+}
+
+.shipping_payment_box>div>div{
+    padding-left:4vw
+}
+
+
+.orderDetailsContainerBox>div{
+    display: flex;
+    margin:1vw 0;
+    align-items: center;
+}
+
+.orderDetailsContainerBox>div>p{
+    font:400 1.8vw "Roboto";
+}
+
+.orderDetailsContainerBox>div>span{
+    margin:0 1vw;
+    font:100 1.2vw "Roboto";
+    color: #575757;
+}
+
+.orderDetailsCartIems{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    padding:2vw 5vw;
+    border-top: 1px solid rgba(0, 0, 0, 0.179)
+}
+
+
+.orderDetailsCartIems>p{
+    font:400 1.8vw "Roboto";
+}
+
+.orderDetailsCartItemContainer{
+    width:100%
+}
+
+.orderDetailsCartItemContainer>div{
+    font:400 1vw "Roboto";
+    display: flex;
+    margin:2vw 0;
+    align-items: center;
+}
+
+.orderDetailsCartItemContainer>div>img{
+    width:3vw;
+}
+
+.orderDetailsCartItemContainer>div>a{
+    color: #575757;
+    text-decoration: none;
+    width:60%;
+    margin: 0 4vw;
+}
+
+.orderDetailsCartItemContainer>div>a:hover{
+    color:#444444
+}
+
+.orderDetailsCartItemContainer>div>span{
+    color: #5e5e5e;
+    font:100 1vw "Roboto";
+}
+
+
+@media screen and (max-width:600px) {
+    .orderDetailsContainer>p{
+        font: 400 6vw "Roboto";
+    }
+
+    .orderDetailsContainerBox>div{
+        margin:6vw 0;
+    }
+
+    .orderDetailsContainerBox>div>p{
+        font:400 4vw "Roboto";
+    }
+
+    .orderDetailsContainerBox>div>span{
+        font:100 3.5vw "Roboto";
+    }
+
+    .orderDetailsCartIems>p{
+        font:400 6vw "Roboto";
+    }
+    .orderDetailsContainerBox>p{
+        font:400 6vw "Roboto";
+    }
+    
+    .orderDetailsCartItemContainer>div{
+        font:400 4vw "Roboto";
+        margin:4vw 0;
+    }
+
+    .orderDetailsCartItemContainer>div>img{
+        width:10vw;
+    }
+    
+    .orderDetailsCartItemContainer>div>a{
+        width:30%;
+        margin: 2vw;
+    }
+
+    .orderDetailsCartItemContainer>div>span{
+        font:100 3vw "Roboto";
+    }
+
+    .shipping_payment_box{
+        flex-direction: column;
+    }
+    
+    .shipping_payment_box>div:last-child{
+        border-left: none;
+        padding-left: 0;
+    }
+    
+    .shipping_payment_box>div>div{
+        padding-left:4vw
+    }
+}

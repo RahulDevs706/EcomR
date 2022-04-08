@@ -1,0 +1,54 @@
+.updateOrderContainer{
+    background-color: white;
+}
+
+.process{
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    padding:4vw 1vw 1vw;
+}
+
+.processDetails{
+    border-right: 1px dashed #5a5a5a;
+}
+
+.updateOrder{
+    display: grid;
+    grid-template-rows: 3fr 2fr 1fr;
+    box-shadow: none;
+    border-radius: 0%;
+    width:auto;
+    height: auto;
+    border-left: 1px solid #5b5b5b
+}
+
+.updateCartItem{
+    padding:2vw;
+    padding-bottom:0;
+}
+
+.updateCart{
+    max-height: 12vw;
+}
+
+@media screen and (max-width:600px) {
+    .process{
+        grid-template-columns: none;
+    }
+
+    .processDetails{
+        border-right: none;
+    }
+
+    .updateCart{
+        max-height: 43vw;
+    }
+
+    .updateOrder{
+        border-left: none;
+        place-items: center;
+        grid-template-rows: 2.5fr 2fr;
+        padding:6vw;
+    }
+    
+}

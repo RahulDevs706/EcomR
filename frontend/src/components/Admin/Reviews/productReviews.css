@@ -1,0 +1,89 @@
+.productReviewsContainer{
+    width:100%;
+    background-color: white;
+    border-left: 1px solid rgba(0, 0, 0, 0.158);
+    box-sizing: border-box;
+    height:100%;
+}
+
+.productReviewsForm{
+    width:40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 3vw;
+    background-color: white;
+}
+
+.productReviewsFormHeading{
+    color:rgba(0, 0, 0, 0.747);
+    font:300 2vw "Roboto";
+    text-align: center;
+}
+
+.productReviewsForm>div{
+    display: flex;
+    width:100%;
+    align-items: center;
+    margin:2vw;
+}
+
+.productReviewsForm > div > select{
+    padding:1vw 4vw;
+    padding-right: 1vw;
+    width: 100%;
+    box-sizing: border-box;
+    border:1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 1vw "Roboto";
+    outline: none;
+    max-width: 100%;
+    background-color: white;
+}
+
+.productReviewsForm > div > select>option{
+    font:200 1vw "Roboto";
+}
+
+
+
+.productReviewsForm > div > svg{
+    position: absolute;
+    transform: translateX(1vw);
+    font-size: 1.6vw;
+    color: rgba(0, 0, 0, 0.594);
+}
+
+
+@media screen and (max-width:600px) {
+    .productReviewsForm{
+        width:80%;
+        padding:5vw;
+        max-width:100%
+    }
+
+    .productReviewsFormHeading{
+        font:300 5vw "Roboto";
+    }
+
+    .productReviewsForm>div{
+        margin:5vw;
+    }
+
+    .productReviewsForm > div > select{
+        max-width: 100%;     
+        padding:5vw;
+        padding-left: 12vw;
+        font: 300 4vw "Roboto";
+    }
+
+    .productReviewsForm > div > select>option{
+        font:200 4vw "Roboto";
+    }
+
+    .productReviewsForm > div > svg{
+        margin:2vw;
+        font-size: 7vw;
+    }
+}
